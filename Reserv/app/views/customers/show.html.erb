@@ -1,0 +1,8 @@
+<%= @customer.name %>
+
+<p>Last reservations</p>
+
+<%= render @customer.reservations %>
+
+<%= link_to 'Do you want to make a reservation?', new_customer_reservation_path(@customer) %>
+

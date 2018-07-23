@@ -1,0 +1,21 @@
+<%= form_with(model: [@customer,@customer.reservations.build], local: true) do |form| %>
+  <p>
+    <%= form.label :date %><br>
+    <%= form.text_field :date %>
+  </p>
+  <p>
+    <%= form.label :table_num %><br>
+    <%= form.text_area :table_num %>
+  </p>
+  <p>
+    <%= form.label :num_people %><br>
+    <%= form.text_area :num_people %>
+  </p>
+  <p>
+    <%= form.label :reserv_code %><br>
+    <%= form.text_area :reserv_code %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

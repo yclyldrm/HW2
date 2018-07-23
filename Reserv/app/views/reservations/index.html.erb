@@ -1,0 +1,31 @@
+<h1>Reservations</h1>
+
+<% if @reservations.none? %>
+
+<p>No existing reservation</p>
+
+<% else %>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Cust. Name</th>
+			<th>Table</th>
+			<th>Num. of People</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<% @reservations.each do |reserv| %>
+		<tr class="reservations_list">
+			<td><%= reserv.customer.name %></td>
+			<td><%= reserv.table_num %></td>
+			<td><%= reserv.num_people %></td>
+		</tr>
+	<% end %>
+	</tbody>
+</table>
+
+<% end %>
+
+<%= link_to 'New Reservation', new_customer_path %>

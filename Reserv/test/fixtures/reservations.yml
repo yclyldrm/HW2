@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2018-07-23 01:01:25
+  table_num: 1
+  num_people: 1
+  reserv_code: MyString
+  customer: one
+
+two:
+  date: 2018-07-23 01:01:25
+  table_num: 1
+  num_people: 1
+  reserv_code: MyString
+  customer: two
